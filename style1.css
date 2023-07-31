@@ -1,0 +1,156 @@
+. {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',snas-serif;
+}
+body{
+ background:white;
+ position: relative;
+}
+.header
+{
+ position:fixed;
+ top:0;
+ left:0;
+ width:95%;
+ padding: 30px; 
+ background: transparent;
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 100;
+}
+.logo
+{
+ font-size: 25px;
+ color:#222;
+ text-decoration: none;
+ font-weight: 500;
+ margin: 0;
+
+}
+.navbar a 
+{
+font-size: 18px;
+color:#222;
+text-decoration: none;
+align-items: center;
+font-weight: 500;
+margin:0 20px;
+transition: .3s;
+max-width: 300px;
+}
+.navbar a:hover
+{
+ color:#1743e3;
+}
+.social-media
+{
+ display: flex;
+ justify-content: space-between;
+ width: 150px;
+ height:40px;
+}
+.social-media a{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 40px;
+ height: 40px;
+ background: transparent;
+ border:2px solid white;
+ text-decoration: none;
+ transform: rotate(45deg);
+ transition: .5s;
+
+}
+.social-media a:hover
+{
+ border-color: #1743e3;
+}
+.social-media a i
+{
+ font-size: 24px;
+ color: #1743e3;
+ transform: rotate(-45deg);
+}
+.home
+{
+ position: relative;
+ width:100%;
+ height:100vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 50px 8% 0 ;
+ overflow: hidden;
+}
+.home-content
+{
+ max-width: 600px;
+}
+.home-content h1
+{
+ font-size: 50px;
+ line-height: 1.2;
+}
+.home-content h3
+{
+ font-size: 40px;
+ color:#1743e3;
+}
+.home-content p
+{
+ font-size: 16px;
+ /* margin: 15px 0 30px; */
+ 
+}
+.btn
+{
+ display: inline-block;
+ padding: 10px 28px;
+ background: #1743e3;
+ border:2px solid #1743e3;
+ border-radius: 6px;
+ box-shadow: 0 0 10px rgba(0,0,.5,.5);
+ font-size: 16px;
+ color: white;
+ letter-spacing: 1px;
+ text-decoration: none;
+ font-weight: 600;
+ transition: .5s
+}
+.btn:hover{
+ color:#1743e3;
+ background:transparent;
+ box-shadow: ;
+}
+.home-img
+{
+ position: relative;
+ width:420px;
+ height:420px;
+ transform: rotate(45deg);
+
+}
+.home-img .rhombus
+{
+ position: absolute;
+ width:100%;
+ height:100%;
+ background:white;
+ top:110px;
+ left:-100px;
+ border:25px solid #1743e3;
+ margin: 30px 30px 30px ;
+}
+.home-img .rhombus img
+{
+position: relative;
+top:200px;
+left:-320px;
+width:650px;
+height: 450px;
+transform: rotate(-45deg);
+}
