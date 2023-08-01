@@ -1,10 +1,10 @@
-. {
+.{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',snas-serif;
 }
-body{
+.body{
  background:white;
  position: relative;
 }
@@ -23,23 +23,32 @@ body{
 }
 .logo
 {
- font-size: 25px;
+ font-size: 30px;
  color:#222;
  text-decoration: none;
  font-weight: 500;
  margin: 0;
-
+ opacity: 0;
+ animation: slideRight 1s ease forwards;
+}
+.logo a:hover
+{
+color:#1743e3 ;
 }
 .navbar a 
 {
-font-size: 18px;
+display:inline-block;
+font-size: 20px;
 color:#222;
 text-decoration: none;
 align-items: center;
 font-weight: 500;
 margin:0 20px;
 transition: .3s;
-max-width: 300px;
+opacity: 0;
+max-width: 200px;
+animation: slideTop 1s ease forwards;
+animation-delay:calc(.2s*var(--i)) ;
 }
 .navbar a:hover
 {
@@ -51,28 +60,32 @@ max-width: 300px;
  justify-content: space-between;
  width: 150px;
  height:40px;
+ columns: white;
 }
-.social-media a{
+.social-media a
+{
  display: inline-flex;
  align-items: center;
  justify-content: center;
  width: 40px;
  height: 40px;
  background: transparent;
- border:2px solid white;
+ border:2px solid #1743e3;
  text-decoration: none;
  transform: rotate(45deg);
  transition: .5s;
-
+ animation: slideSci 1s ease forwards;
+ animation-delay:calc(.2s*var(--i)) ;
 }
+
 .social-media a:hover
 {
- border-color: #1743e3;
+ border-color: white;
 }
 .social-media a i
 {
  font-size: 24px;
- color: #1743e3;
+ color: white;
  transform: rotate(-45deg);
 }
 .home
@@ -90,21 +103,32 @@ max-width: 300px;
 {
  max-width: 600px;
 }
+.home-content h2{
+ color:#222;
+ font-size: 35px;
+}
 .home-content h1
 {
+ color:#1743e3;
  font-size: 50px;
  line-height: 1.2;
+ opacity: 0;
+ animation: slideBottom 1s ease forwards;
+ animation-delay: 1s;
 }
 .home-content h3
 {
  font-size: 40px;
  color:#1743e3;
+ opacity: 0;
+ animation: slideRight 1.3s ease forwards;
 }
 .home-content p
 {
  font-size: 16px;
- /* margin: 15px 0 30px; */
- 
+ opacity: 0;
+ animation: slideLeft 1s ease forwards;
+ animation-delay: 1.6s;
 }
 .btn
 {
@@ -119,12 +143,14 @@ max-width: 300px;
  letter-spacing: 1px;
  text-decoration: none;
  font-weight: 600;
- transition: .5s
+ transition: .5s;
+ animation: slideTop 1s ease forwards;
+ animation-delay: 2s;
 }
 .btn:hover{
  color:#1743e3;
  background:transparent;
- box-shadow: ;
+
 }
 .home-img
 {
@@ -143,14 +169,130 @@ max-width: 300px;
  top:110px;
  left:-100px;
  border:25px solid #1743e3;
- margin: 30px 30px 30px ;
+ box-shadow: -15px 15px 15px rgba(0,0,0,.7);
+ opacity: 0;
+ animation: zoomOut 1s ease forwards;
+ animation-delay: 1.6s;
+
 }
 .home-img .rhombus img
 {
 position: relative;
-top:200px;
-left:-320px;
-width:650px;
-height: 450px;
+top:100px;
+left:-500px;
+width:1200px;
+height:800px;
 transform: rotate(-45deg);
+opacity: 0;
+margin-top:-100px;
+animation: car 1s ease forwards;
+animation-delay: 2s;
+}
+.home .rhombus2
+{
+ position:absolute;
+ top:-25%;
+ right:-2%;
+ height: 600px;
+ width:600px;
+ background: #1743e3;
+ transform: rotate(45deg);
+ z-index:-1;
+ box-shadow: -15px 15px 15px rgba(0,0,0,.4);
+}
+@keyframes slideRight
+{
+ 0%
+ {
+   transform: translateX(-100px);
+   opacity: 0;
+ }
+100%
+ {
+   transform: translateX(0);
+   opacity: 1;
+ }
+
+}
+@keyframes slideTop
+{
+ 0%
+ {
+   transform: translateY(100px);
+   opacity: 0;
+ }
+100%
+ {
+   transform: translateY(0);
+   opacity: 1;
+ }
+ 
+}
+@keyframes slideLeft
+{
+ 0%
+ {
+   transform: translatex(100px);
+   opacity: 0;
+ }
+100%
+ {
+   transform: translatex(0);
+   opacity: 1;
+ }
+ 
+}
+@keyframes slideSci
+{
+ 0%
+ {
+   transform: translateY(100px) rotate(45deg);
+   opacity: 0;
+ }
+100%
+ {
+   transform: translateY(0) rotate(45deg);
+   opacity: 1;
+ }
+}
+@keyframes slideBottom
+{
+ 0%
+ {
+   transform: translateY(-100px) ;
+   opacity: 0;
+ }
+100%
+ {
+   transform: translateY(0) ;
+   opacity: 1;
+ }
+ 
+}
+@keyframes zoomOut
+
+{
+ 0%
+ {
+   transform: scale(1.1) ;
+   opacity: 0;
+ }
+100%
+ {
+   transform: scale(1) ;
+   opacity: 1;
+ } 
+}
+@keyframes car
+{
+ 0%
+ {
+   transform: translate(300px,-300px) scale(0) rotate(-45deg) ;
+   opacity: 0;
+ }
+100%
+ {
+   transform:translate(0,0) scale(1) rotate(-45deg)  ;
+   opacity: 1;
+ } 
 }
