@@ -50,9 +50,13 @@ max-width: 200px;
 animation: slideTop 1s ease forwards;
 animation-delay:calc(.2s*var(--i)) ;
 }
+
 .navbar a:hover
 {
  color:#1743e3;
+}
+.navbar a:hover .avtive{
+  opacity:.6;
 }
 .social-media
 {
