@@ -1,10 +1,15 @@
-.{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* .{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',snas-serif;
+  font-family: 'Montserrat', sans-serif;
+} */
+p{
+  font-family: 'Montserrat', sans-serif;
 }
-.body{
+body{
  background:white;
  position: relative;
 }
@@ -33,7 +38,7 @@
 }
 .logo a:hover
 {
-color:#1743e3 ;
+color:#593ebb; ;
 }
 .navbar a 
 {
@@ -53,7 +58,7 @@ animation-delay:calc(.2s*var(--i)) ;
 
 .navbar a:hover
 {
- color:#1743e3;
+ color:#593ebb;;
 }
 .navbar a:hover .avtive{
   opacity:.6;
@@ -74,7 +79,7 @@ animation-delay:calc(.2s*var(--i)) ;
  width: 40px;
  height: 40px;
  background: transparent;
- border:2px solid #1743e3;
+ border:2px solid #593ebb;;
  text-decoration: none;
  transform: rotate(45deg);
  transition: .5s;
@@ -113,7 +118,7 @@ animation-delay:calc(.2s*var(--i)) ;
 }
 .home-content h1
 {
- color:#1743e3;
+ color:#593ebb;;
  font-size: 50px;
  line-height: 1.2;
  opacity: 0;
@@ -123,7 +128,7 @@ animation-delay:calc(.2s*var(--i)) ;
 .home-content h3
 {
  font-size: 40px;
- color:#1743e3;
+ color:#593ebb;;
  opacity: 0;
  animation: slideRight 1.3s ease forwards;
 }
@@ -138,8 +143,8 @@ animation-delay:calc(.2s*var(--i)) ;
 {
  display: inline-block;
  padding: 10px 28px;
- background: #1743e3;
- border:2px solid #1743e3;
+ background: #593ebb;;
+ border:2px solid #593ebb;;
  border-radius: 6px;
  box-shadow: 0 0 10px rgba(0,0,.5,.5);
  font-size: 16px;
@@ -152,7 +157,7 @@ animation-delay:calc(.2s*var(--i)) ;
  animation-delay: 2s;
 }
 .btn:hover{
- color:#1743e3;
+ color:#593ebb;;
  background:transparent;
 
 }
@@ -172,7 +177,7 @@ animation-delay:calc(.2s*var(--i)) ;
  background:white;
  top:110px;
  left:-100px;
- border:25px solid #1743e3;
+ border:25px solid #593ebb;
  box-shadow: -15px 15px 15px rgba(0,0,0,.7);
  opacity: 0;
  animation: zoomOut 1s ease forwards;
@@ -199,7 +204,7 @@ animation-delay: 2s;
  right:-2%;
  height: 600px;
  width:600px;
- background: #1743e3;
+ background: #593ebb;
  transform: rotate(45deg);
  z-index:-1;
  box-shadow: -15px 15px 15px rgba(0,0,0,.4);
