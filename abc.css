@@ -33,9 +33,14 @@ body{
     z-index: 100;
 }
 .nav-logo img{
+<<<<<<< HEAD
     height: 100px;
     width: 240px;
     margin-top: 20px;
+=======
+   height: 100px;
+   width:200px;
+>>>>>>> ae8d350704ef795b7264fbe77bb666f126106d7c
 }
 .nav-menu ul{
     display: flex;
@@ -50,6 +55,11 @@ body{
     padding-bottom: 15px;
     margin: 0 25px;
 }
+/* .Logo
+{
+    height: 100px;
+    width:200px;
+} */
 .link:hover, .active{
     border-bottom: 2px solid #fff;
 }
