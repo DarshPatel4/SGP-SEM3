@@ -32,10 +32,9 @@ body{
     background: linear-gradient(rgba(39,39,39, 0.6), transparent);
     z-index: 100;
 }
-.nav-logo p{
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
+.nav-logo img{
+   height: 100px;
+   width:200px;
 }
 .nav-menu ul{
     display: flex;
@@ -50,6 +49,11 @@ body{
     padding-bottom: 15px;
     margin: 0 25px;
 }
+/* .Logo
+{
+    height: 100px;
+    width:200px;
+} */
 .link:hover, .active{
     border-bottom: 2px solid #fff;
 }

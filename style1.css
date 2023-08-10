@@ -128,9 +128,9 @@ animation-delay:calc(.2s*var(--i)) ;
 }
 .home-content h3
 {
-  position: relative;
+ position: relative;
  font-size: 40px;
- color:#593ebb;;
+ color:#593ebb;
  opacity: 0;
  animation: slideRight 1.3s ease forwards;
 }
@@ -156,6 +156,8 @@ animation-delay:calc(.2s*var(--i)) ;
  letter-spacing: 1px;
  text-decoration: none;
  font-weight: 600;
+ position: fixed;
+ margin-bottom:px;
  transition: .5s;
  animation: slideTop 1s ease forwards;
  animation-delay: 2s;
