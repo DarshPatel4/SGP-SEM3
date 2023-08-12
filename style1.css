@@ -8,7 +8,7 @@
 } */
 
 body{
- background:white;
+ background:rgb(20, 16, 16);
  position: relative;
 }
 .header
@@ -27,7 +27,7 @@ body{
 .logo
 {
  font-size: 30px;
- color:#222;
+ color:white;
  text-decoration: none;
  font-weight: 500;
  margin: 0;
@@ -36,13 +36,13 @@ body{
 }
 .logo a:hover
 {
-color:#593ebb; ;
+color:rgb(229, 129, 14) ;
 }
 .navbar a 
 {
 display:inline-block;
 font-size: 20px;
-color:#222;
+color:rgb(229, 129, 14);
 text-decoration: none;
 align-items: center;
 font-weight: 500;
@@ -56,7 +56,7 @@ animation-delay:calc(.2s*var(--i)) ;
 
 .navbar a:hover
 {
- color:#593ebb;;
+ color:white;
 }
 .navbar a:hover .avtive{
   opacity:.6;
@@ -67,7 +67,7 @@ animation-delay:calc(.2s*var(--i)) ;
  justify-content: space-between;
  width: 150px;
  height:40px;
- columns: white;
+ columns: rgb(20, 16, 16);
 }
 .social-media a
 {
@@ -77,7 +77,7 @@ animation-delay:calc(.2s*var(--i)) ;
  width: 40px;
  height: 40px;
  background: transparent;
- border:2px solid #593ebb;;
+ border:2px solid rgb(229, 129, 14);
  text-decoration: none;
  transform: rotate(-45deg);
  transition: .5s;
@@ -87,13 +87,13 @@ animation-delay:calc(.2s*var(--i)) ;
 
 .social-media a:hover
 {
- border-color: white;
+ border-color: rgb(20, 16, 16);
  transform: rotate(0deg);
 }
 .social-media a i
 {
  font-size: 24px;
- color: white;
+ color: rgb(20, 16, 16);
  transform: rotate(-45deg);
 }
 .home
@@ -113,13 +113,13 @@ animation-delay:calc(.2s*var(--i)) ;
  position: fixed;
 }
 .home-content h2{
- color:#222;
+ color:rgb(229, 129, 14);
  font-size: 35px;
  position: relative;
 }
 .home-content h1
 {
- color:#593ebb;;
+ color:rgb(229, 129, 14);
  font-size: 50px;
  line-height: 1.2;
  opacity: 0;
@@ -131,13 +131,14 @@ animation-delay:calc(.2s*var(--i)) ;
 {
  position: relative;
  font-size: 40px;
- color:#593ebb;
+ color:rgb(229, 129, 14);
  opacity: 0;
  animation: slideRight 1.3s ease forwards;
 }
 .home-content p
 {
  position: relative;
+ color:rgb(229, 129, 14);
  font-family: 'Montserrat';
  font-size: 16px;
  opacity: 0;
@@ -148,12 +149,12 @@ animation-delay:calc(.2s*var(--i)) ;
 {
  display: inline-block;
  padding: 10px 28px;
- background: #593ebb;;
- border:2px solid #593ebb;;
+ background: rgb(229, 129, 14);
+ border:2px solid rgb(229, 129, 14);
  border-radius: 6px;
  box-shadow: 0 0 10px rgba(0,0,.5,.5);
  font-size: 16px;
- color: white;
+ color:rgb(20, 16, 16);
  letter-spacing: 1px;
  text-decoration: none;
  font-weight: 600;
@@ -164,7 +165,7 @@ animation-delay:calc(.2s*var(--i)) ;
  animation-delay: 2s;
 }
 .btn:hover{
- color:#593ebb;;
+ color:rgb(229, 129, 14);
  background:transparent;
 
 }
@@ -183,11 +184,11 @@ animation-delay:calc(.2s*var(--i)) ;
  position:fixed;
  width:100%;
  height:100%;
- background:white;
+ background:rgb(20, 16, 16);
  top:-0.5px;
  right:-30px;
- border:25px solid #593ebb;
- box-shadow: -15px 15px 15px rgba(0,0,0,.7);
+ border:25px solid rgb(229, 129, 14);
+ box-shadow: -10px 10px 15px 20px rgba(0,0,0,.7);
  opacity: 0;
  animation: zoomOut 1s ease forwards;
  animation-delay: 1.6s;
@@ -196,10 +197,10 @@ animation-delay:calc(.2s*var(--i)) ;
 .home-img .rhombus img
 {
 position: relative;
-top:100px;
-left:-500px;
-width:1200px;
-height:800px;
+top: 350px;
+left:-120px;
+width:600px;
+height:400px;
 transform: rotate(-45deg);
 opacity: 0;
 margin-top:-100px;
@@ -213,7 +214,7 @@ position:fixed;
  right:-200px;
  height: 600px;
  width:600px;
- background: #593ebb;
+ background:rgb(229, 129, 14);
  transform: rotate(45deg);
  z-index:-1;
  box-shadow: -15px 15px 15px rgba(0,0,0,.4);
@@ -221,7 +222,7 @@ position:fixed;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: rgb(20, 16, 16);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   transform: rotate(0deg);
@@ -229,7 +230,7 @@ position:fixed;
 }
 
 .dropdown-content a  {
-  color: black;
+  color: rgb(229, 129, 14);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -239,7 +240,7 @@ position:fixed;
 
 .dropdown-content a:hover
  {
-  background-color: #f1f1f1;
+  background-color: rgb(20, 16, 16);
   
 }
 

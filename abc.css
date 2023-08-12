@@ -33,15 +33,9 @@ body{
     z-index: 100;
 }
 .nav-logo img{
-<<<<<<< HEAD
     height: 100px;
     width: 240px;
-    margin-top: 20px;
-=======
-   height: 100px;
-   width:200px;
->>>>>>> ae8d350704ef795b7264fbe77bb666f126106d7c
-}
+    margin-top: 20px;}
 .nav-menu ul{
     display: flex;
 }
