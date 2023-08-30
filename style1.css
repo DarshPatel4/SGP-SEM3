@@ -24,7 +24,7 @@ body{
  display:flex;
  justify-content: space-between;
  align-items: center;
- z-index: 100;
+ z-index: 2;
 }
 div.logo
 {
@@ -447,4 +447,8 @@ animation-delay: 2s;
   content:"";
   clear:both;
   display:table;
+}
+.back
+{
+  background-image: url('Background_main.jpg');
 }
