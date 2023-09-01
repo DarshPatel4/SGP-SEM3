@@ -3,41 +3,44 @@
   *{
   margin-bottom:0;
   padding: 0;
-  box-sizing: border-box;
+   box-sizing: border-box; 
   font-family: 'Montserrat', sans-serif;
-  scroll-padding-top: 1rem;
+  scroll-padding-top: 5rem;
   scroll-behavior: smooth;
   list-style: none;
   text-decoration: none;
   margin: auto;
+ 
 } 
 img{
-  width:100%;
+   width:100%;
+  height: 100%; 
 } 
-body{
- background:rgb(20, 16, 16);
- color:white;
+
+.head{
+  background-color:rgb(20, 16, 16);
+  color:white;
+  
 }
 .container
 {
  width:100%;
- margin-left:auto;
- margin-right:auto;
  margin: auto;
+ display: flex;
+ flex-wrap:wrap;
 }
 header{
   display: block;
-  width:100%;
   margin: auto;
   top:0;
   left:50;
   z-index: 100;
 }
 .nav{
-display:flex;
-align-items:center;
-justify-content: space-between;
-padding: 20px 15px;
+ display:flex;
+ align-items:center;
+ justify-content: space-between;
+ padding: 20px 15px;
 }
 .logo
 {
@@ -50,17 +53,15 @@ padding: 20px 15px;
 }
 .navbar
 {
-display:flex;
-column-gap: 2rem;
+ display:flex;
+ column-gap: 2rem;
 }
 .navbar li a 
 {
-
-font-size: 1rem;
-color:white;
-text-transform: uppercase;
-font-weight: 500;
-
+ font-size: 1rem;
+ color:white;
+ text-transform: uppercase;
+ font-weight: 500;
 }
 .navbar a:hover
 {
@@ -75,14 +76,14 @@ font-weight: 500;
 {
  display: flex;
  justify-content: space-between;
- width: 150px;
- height:40px;
+ height: auto;
+ width: auto;
  columns: rgb(20, 16, 16);
 }
 .social-media 
 {
  align-items: center;
-justify-content: center;
+ justify-content: center;
  width: 40px;
  height: 40px;
  background: transparent;
@@ -105,9 +106,9 @@ justify-content: center;
 } 
 .home
 {
- position: relative;
- width:100%;
- height:100vh;
+ position:relative;
+ width:auto;
+ height:auto;
  margin: auto;
  display:flex;
  align-items: center;
@@ -117,14 +118,15 @@ justify-content: center;
 }
 .home-content
 {
-  margin-top: 150px;
- padding-left: 30px;
- 
+ margin-top: 120px;
+ margin-bottom: 150px;
+ margin-left: 100px;
 }
 .home-content h2{
  color:rgb(229, 129, 14);
  font-size: 35px;
- 
+ height: auto;
+ width: auto;
 }
 .home-content h1
 {
@@ -135,7 +137,7 @@ justify-content: center;
 }
 .home-content h3
 {
-  margin-top: 8px;
+  margin-top: 10px;
  font-size: 40px;
  color:#ffff;
  margin-bottom: 5px;
@@ -146,7 +148,7 @@ justify-content: center;
  color:#ffff;
  font-family: 'Montserrat';
  font-size: 16px;
- margin-bottom: 20px;
+ margin-bottom: 40px;
 }
 .btn
 {
@@ -163,25 +165,77 @@ justify-content: center;
  margin: auto;
  transition: .5s;
  margin-top: 20px;
- 
 }
-.btn:hover{
+.btn:hover
+{
  color:rgb(229, 129, 14);
  background:transparent;
-
 }
-
-.home .rhombus2
+.cars
 {
- margin: auto;
- height:650px;
- width:500px;
- position:top right;
+  background-color:rgb(45, 44, 44);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cars-container
+{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+  margin-top:2rem; 
+  border-radius: 10px;
+  border-color: #ffff;
+}
+.cars-container .box
+{
+  flex: 1 1 1 25rem;
+  position: relative;
+  height:220px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.heading
+{
+  text-align:center;
+}
+.heading span
+{
+  font-weight: 700;
+  font-size: 40px;
+  color:rgb(229, 129, 14);
+}
+.heading span:hover{
+  color: #ffff;
+}
+.heading h2
+{
+  font-weight: 500;
+  color: #ffff;
+  font-size: 30px;
+}
+.heading h2:hover
+{
+  color: rgb(229, 129, 14);
+}
+.heading p{
+  padding-top: 10px;
+  font-size:0.938rem;
+  font-weight:500;
+  color:#ffff;
+}
+.heading p:hover{
+  color:rgb(229, 129, 14);
+}
+/* .head.rhombus2
+{
+ height:550px;
+ width:450px;
+ position: top;
  background:rgb(229, 129, 14);
  transform: rotate(45deg);
  z-index:-1;
  box-shadow: -15px 15px 15px rgba(0,0,0,.4);
-}
+}  */
 
 .dropdown-content {
   display: none;
