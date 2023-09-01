@@ -194,18 +194,36 @@ header{
   border-radius: 0.5rem;
   overflow: hidden;
 }
+.cars-container .box h2{
+  color: white;
+  position: absolute;
+  bottom:1rem;
+  left:1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: black;
+  padding:8px;
+  border-radius: 0.5rem;
+}
+.cars-container .box:hover h2
+{
+  background-color: rgb(229, 129, 14);
+  
+}
 .heading
 {
   text-align:center;
 }
 .heading span
 {
+  display:block;
   font-weight: 700;
   font-size: 40px;
+  background-color: #ffff;
   color:rgb(229, 129, 14);
 }
 .heading span:hover{
-  color: #ffff;
+  color:black;
 }
 .heading h2
 {
@@ -219,7 +237,7 @@ header{
 }
 .heading p{
   padding-top: 10px;
-  font-size:0.938rem;
+  font-size:20px;
   font-weight:500;
   color:#ffff;
 }
@@ -235,7 +253,7 @@ header{
  transform: rotate(45deg);
  z-index:-1;
  box-shadow: -15px 15px 15px rgba(0,0,0,.4);
-}  */
+}   */
 
 .dropdown-content {
   display: none;
