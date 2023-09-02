@@ -364,3 +364,13 @@ header{
 {
   background-image: url('Background_main.jpg');
 }
+
+.box{
+  width :85vw ;
+  height:auto !important;
+
+}
+.box:hover{
+  background-color: var(--main-color) !important ;
+
+}
