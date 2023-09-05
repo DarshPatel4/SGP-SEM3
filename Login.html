@@ -17,7 +17,6 @@
           <li><a href="#conatiner">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
           <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
@@ -27,21 +26,21 @@
     <div class="container">
       <div class="form-box">
         <h1 id="title">Sign Up</h1>
-        <form>
+        <form name = "submit-to-google-sheet">
             <div class="input-group">
               <div class="input-field" id="namefield">
                 <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Name">
+                <input type="text" name = "Name" placeholder="Name">
               </div>
 
               <div class="input-field">
                 <i class="fa-solid fa-envelope"></i>
-                <input type="email" placeholder="Email">
+                <input type="email" name="Email" placeholder="Email">
               </div>
 
               <div class="input-field">
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" placeholder="Password">
+                <input type="password" name = "Password"placeholder="Password">
               </div>
               <p>Lost Password <a href="#">Click Here</a></p>
             </div>
@@ -72,6 +71,18 @@
     signupbtn.classList.remove("disable");
     signinbtn.classList.add("disable");
   }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzUwFckxdLVEneCfMTA-SDeMBR7kSmUdXBc3SibJodo4OlaL9EdttcwoZBWpijA_iHSxg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
 </body>
 </html>
