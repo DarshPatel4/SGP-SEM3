@@ -24,7 +24,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #fff;
+    background:#fff;
     padding: 50px 60px 70px;
     text-align: center;
 }
@@ -144,4 +144,10 @@ nav ul li a::after
 nav ul li a:hover::after
 {
     width: 100%;
+}
+
+.logo{
+    padding-left: 40px;
+    height: 90px;
+    width: 250px;
 }
