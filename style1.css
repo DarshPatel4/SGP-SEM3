@@ -212,6 +212,7 @@ header{
 .cars-container .box:hover h2
 {
   background-color: rgb(229, 129, 14);
+  padding:8px 12px;
   
 }
 .heading
@@ -291,13 +292,14 @@ header{
 }
 .footer
 {
-
   background-color: black;
   color:#ffff;
   border-top:2px solid black;
+  
 }
 .footer-container
 {
+ 
   display:flex;
   justify-content: space-between;
   gap:1rem;
@@ -305,6 +307,12 @@ header{
 .footer-container .LOGO{
   color:#ffff;
   margin-bottom: 1rem;
+}
+.footer-container .LOGO:hover
+{
+  color:rgb(229, 129, 14);
+  font-size: 18px;
+  border-bottom: 3px solid rgb(229, 129, 14);
 }
 .footer-container .footer-box
 {
@@ -317,21 +325,28 @@ header{
   align-items:center;
 }
 .footer_logo a{
+ 
   font-size: 24px;
   color:#ffff;
   margin-right:1rem;
 }
 .footer_logo a:hover{
-  color:var(--main-color);
+  color:rgb(229, 129, 14);
+  transform: rotate(30deg);
 }
 .footer-box h3
 {
+ 
   font-size:1.1rem;
   font-weight:400;
   margin-bottom: 1rem;
   margin-right: 1rem;
 }
-.footer-box a,
+.footer-box a
+{
+  color: #ffff;
+  margin-bottom: 10px;
+}
 .footer-box p
 {
   color: #ffff;
@@ -378,3 +393,4 @@ header{
   background-color: var(--main-color) !important ;
 
 }
+.box h2
