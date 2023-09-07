@@ -42,15 +42,7 @@ header{
  justify-content: space-between;
  padding: 20px 15px;
 }
-.logo
-{
- font-size: 30px;
- color:white;
- text-decoration: none;
- font-weight: 500px;
- left:50px;
 
-}
 .navbar
 {
  display:flex;
@@ -266,14 +258,14 @@ header{
   position: absolute;
   background-color: rgb(20, 16, 16);
   min-width: 160px;
-  
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a  {
+  font-size: 14px;
   color: rgb(229, 129, 14);
-  padding: 20px 80px;
+  padding: 15px 55px;
   text-decoration: none;
   display: block;
   background-size: cover;
@@ -292,76 +284,98 @@ header{
 }
 .footer
 {
-  background-color: black;
-  color:#ffff;
-  border-top:2px solid black;
-  
+  background-color:#24262b;
 }
 .footer-container
 {
  
+ background-color: rgb(44, 40, 40);
+ margin:auto;
+ padding: 60px 100px;
+}
+.row{
   display:flex;
-  justify-content: space-between;
-  gap:1rem;
+  flex-wrap: wrap;
 }
-.footer-container .LOGO{
-  color:#ffff;
-  margin-bottom: 1rem;
+ul{
+  list-style: none;
 }
-.footer-container .LOGO:hover
+.footer-col
 {
-  color:rgb(229, 129, 14);
+  width:25%;
+  padding:0 15px;
+}
+.footer-col h4
+{
   font-size: 18px;
-  border-bottom: 3px solid rgb(229, 129, 14);
-}
-.footer-container .footer-box
-{
-  display:flex;
-  flex-direction: column;
-}
-.footer_logo
-{
-  display:flex;
-  align-items:center;
-}
-.footer_logo a{
- 
-  font-size: 24px;
   color:#ffff;
-  margin-right:1rem;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
-.footer_logo a:hover{
-  color:rgb(229, 129, 14);
-  transform: rotate(30deg);
-}
-.footer-box h3
+.footer-col h4::before
 {
- 
-  font-size:1.1rem;
-  font-weight:400;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
+  content:'';
+  position: absolute;
+  left:0;
+  bottom:-10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width:50px;
 }
-.footer-box a
-{
-  color: #ffff;
+.footer-col ul li:not(:last-child){
   margin-bottom: 10px;
 }
-.footer-box p
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 10px;
+
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  height:40px;
+  width:40px;
+  background-color:rgba(255,255,255,0.2) ;
+  margin-right:0 10px 10px 0;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover
 {
-  color: #ffff;
-  margin-bottom: 10px;
+  color:#24262b;
+  background-color: #ffffff;
+}
+@media(max-width:767px)
+{
+
 }
 .copyright
 {
   padding: 20px;
-  color:#ffff;
+  color:#ffffff;
   background-color: black;
   text-align: center;
+  position: relative;
 }
 .Logo{
- height: 80px;
- width: 180px; 
+ height: 100px;
+ width: 200px; 
+ 
 }
 .img-container
 {
@@ -393,4 +407,3 @@ header{
   background-color: var(--main-color) !important ;
 
 }
-.box h2
