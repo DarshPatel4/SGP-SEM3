@@ -210,17 +210,20 @@ header{
 .heading
 {
   text-align:center;
+  padding-bottom: 20px;
 }
 .heading span
 {
   display:block;
   font-weight: 700;
-  font-size: 40px;
-  background-color: #ffff;
+  font-size: 50px;
+  padding-bottom:20px ;
+  /* background-color: #ffff; */
   color:rgb(229, 129, 14);
 }
 .heading span:hover{
-  color:black;
+  color:#ffffff;
+  font-size: 60px;
 }
 .heading h2
 {
@@ -289,7 +292,7 @@ header{
 .footer-container
 {
  
- background-color: rgb(44, 40, 40);
+ background-color: rgb(20, 16, 16);
  margin:auto;
  padding: 60px 100px;
 }
@@ -360,22 +363,30 @@ ul{
   color:#24262b;
   background-color: #ffffff;
 }
-@media(max-width:767px)
+/* @media(max-width:767px)
 {
+  .footer-col{
+    width:50%;
+    margin-bottom:30px;
+  }  */
+  /* @media(max-width:574px)
+{
+  .footer-col{
+    width:100%;
+   
+  } */
 
-}
 .copyright
 {
   padding: 20px;
   color:#ffffff;
-  background-color: black;
+  background-color:rgb(20, 16, 16);
   text-align: center;
   position: relative;
 }
 .Logo{
  height: 100px;
  width: 200px; 
- 
 }
 .img-container
 {
@@ -406,8 +417,4 @@ ul{
 .box:hover{
   background-color: var(--main-color) !important ;
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c2aa22cf75ae86a9867bd1b06b1893b41673b6e5
