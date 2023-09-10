@@ -373,18 +373,18 @@ ul{
   grid-template-columns: 30px 1fr;
   margin-bottom: 16px;
 }
-/* @media(max-width:767px)
-{
-  .footer-col{
-    width:50%;
-    margin-bottom:30px;
-  }  */
-  /* @media(max-width:574px)
+ /* @media(max-width:991px)
 {
   .footer-col{
     width:100%;
+    margin-bottom:30px;
+  }   */
+ /* @media(max-width:884px)
+{
+  .nav container{
+    width:100%;
    
-  } */
+  }  */
 
 .copyright
 {
@@ -422,7 +422,7 @@ ul{
 .box{
   width :85vw ;
   height:auto !important;
-
+  
 }
 .box:hover{
   background-color: var(--main-color) !important ;
