@@ -12,9 +12,13 @@
   <div id="header">
     <div class="container">
       <nav>
+<<<<<<< HEAD
         <img src="/Assets/whiteLogo.png" class="logo">
+=======
+        <img src="Images/abhishek-logo.png" class="logo"/>
+>>>>>>> 101f17737393c14b903164f981c1b23af3f99c2c
         <ul id="sidemenu">
-          <li><a href="#conatiner">Home</a></li>
+          <li><a href="#conatiner">HOME</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -33,7 +37,7 @@
                 <input type="text" name = "Name" placeholder="Name">
               </div>
 
-              <div class="input-field">
+              <div class="input-field">  
                 <i class="fa-solid fa-envelope"></i>
                 <input type="email" name="Email" placeholder="Email">
               </div>
@@ -76,7 +80,6 @@
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzUwFckxdLVEneCfMTA-SDeMBR7kSmUdXBc3SibJodo4OlaL9EdttcwoZBWpijA_iHSxg/exec'
   const form = document.forms['submit-to-google-sheet']
-
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
