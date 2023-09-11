@@ -12,11 +12,24 @@
   </header>
   <section class="car-details">
     <div class="car-images">
-      <!-- Add images of Audi cars from different angles -->
+      <!-- Add images of Audi cars from different angles
       <img src="Audi-image-1.jpg" alt="Audi Image 1">
       <img src="Audi-image-2.jpg" alt="Audi Image 2">
-      <!-- Add more images as needed -->
+      Add more images as needed
+    </div> -->
+    <div class="car-images">
+      <div class="slider">
+        <img src="Images/Audi-image-1.jpg" alt="Audi Image 1">
+        <img src="Images/Audi-image-2.jpg" alt="Audi Image 2">
+        <img src="Images/Audi-image-3.jpg" alt="Audi Image 2">
+        <!-- Add more images as needed -->
+      </div>
+      <div class="slider-controls">
+        <button class="prev-btn" onclick="prevSlide()">&#8249; Previous</button>
+        <button class="next-btn" onclick="nextSlide()">Next &#8250;</button>
+      </div>
     </div>
+    
     <div class="car-info">
       <h2>Audi Model XYZ</h2>
       <p>Price: $XX,XXX</p>
@@ -31,5 +44,6 @@
     </div>
   </section>
   <!-- Add more sections for additional details, specifications, etc. -->
+  <script src="car-style.js"></script>
 </body>
 </html>
