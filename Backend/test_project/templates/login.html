@@ -1,0 +1,66 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Car_Website
+    </title>
+    <link rel="stylesheet" href="{% static 'LoginPage.css' %}">
+    
+    <style>
+      body{
+        background: url("{% static 'img/Back2.jpg' %}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    </style>
+</head>
+
+<body>
+  
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#conatiner" >HOME</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+        
+      </nav>
+    </div>
+    <div class="container"> 
+      <div class="form-box">
+        <h1 id="title">Sign in</h1>
+        <form action = "login" method = "POST">
+            {%csrf_token%}
+            <div class="input-group">
+              <div class="input-field" id="namefield">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name = "username" placeholder="Name">
+              </div>
+
+              <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name = "Password"placeholder="Password">
+              </div>
+              <p>Lost Password <a href="#">Click Here</a></p>
+            </div>
+            <div class="btn-field">
+              <button type="submit" id="signinbtn">Sign In</button>
+            </div>
+        </form>
+        <div>
+          {% for message in messages%}
+          <h3>{{message}}</h3>
+          {% endfor %}
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
