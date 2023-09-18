@@ -187,7 +187,7 @@ header{
   flex: 1 1 1 20rem;
   position: relative;
   height:220px;
-  border-radius: 0.5rem;
+  border-radius: 2.5rem;
   overflow: hidden;
 } 
 /* .cars-container .box img{
@@ -209,7 +209,7 @@ header{
 } 
 .cars-container .box:hover h2
 {
-  background-color: rgb(229, 129, 14);
+  background-color: rgb(232, 154, 64);
   padding:8px 12px;
   
 }
