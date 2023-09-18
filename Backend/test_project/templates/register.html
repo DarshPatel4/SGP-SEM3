@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'LoginPage.css' %}" />
+    <style>
+      body{
+        background: url("{% static 'img/Back2.jpg' %}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    h3{
+      color : red;
+    }
+    </style>
+  </head> 
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form action="register" method="POST">
+          {%csrf_token%}
+          <div class="input-group">
+            <div class="input-field" id="namefield">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="username" placeholder="Name" />
+            </div>
+
+            <div class="input-field" id="namefield">
+              <i class="fa-solid fa-user"></i>
+              <input type="email" name="Email" placeholder="Email" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" name="Password1" placeholder="Password" />
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" name="Password2" placeholder="Retype Password" />
+            </div>
+            <p>Lost Password <a href="#">Click Here</a></p>
+          </div>
+          <div class="btn-field">
+            <button type="submit" id="signinbtn">Sign In</button>
+          </div>
+        </form>
+        <div>
+          {% for message in messages%}
+          <h3>{{message}}</h3>
+          {% endfor %}
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
