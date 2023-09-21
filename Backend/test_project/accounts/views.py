@@ -52,3 +52,6 @@ def register(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+def index(request):
+    return render('index')
