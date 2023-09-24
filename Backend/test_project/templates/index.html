@@ -1,5 +1,5 @@
 {% load static  %}
-
+{% static "images" as baseUrl%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,32 +67,43 @@
     <h2>Choose your Dream</h2>
     <p>We are helping you to Fullfil your Dream</p>
    </div>
-   <div class="cars-container container">
+   {% comment %} <div class="cars-container container">
     <div class="box">
-    <img src="{% static 'img/hundai_car.jpg' %}">
-    <h2>Parche Car</h2>
+    <img src="{% static 'img/HyundaiNEW.jpg' %}">
+    <h2>View Car</h2>
    </div>
    
    <div class="box">
     <img src="{% static 'img/BMW_car.jpg' %}">
-    <h2>Parche Car</h2>
+    <h2>View Car</h2>
    </div>
+   <!-- <div class="box">
+    <img src="Assets/Car1.jpeg %}">
+    <h2>View Car</h2>
+   </div>-->
    <div class="box">
-    <!-- <img src="img/Car1.jpeg">' %}
-    <h2>Parche Car</h2> -->
+    <img src="{% static 'img/Mustang.jpg' %}">
+    <h2>View Car</h2>
    </div>
-   <div class="box">
-    <!-- <img src="img/Car3.jpeg">
-    <h2>Parche Car</h2> -->
-   </div>
+
    <div class="box">
     <img src="{% static 'img/kia_car.jpg' %}">
-    <h2>Parche Car</h2>
+    <h2>View Car</h2>
    </div>
+
    <div class="box">
-    <!-- <img src="img/Car3.jpeg">
-    <h2>Parche Car</h2> -->
+    <img src="{% static 'img/Chervolet.jpg' %}">
+    <h2>View Car</h2>
    </div>
+ {% endcomment %}
+
+   {% for car in cars %}
+            <div class="box">
+              <img src="{{car.img.url}}">
+            </div>
+		{% endfor %}
+
+
   </div>
  </section>
 

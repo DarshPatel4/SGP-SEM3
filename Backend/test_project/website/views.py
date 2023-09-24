@@ -1,9 +1,10 @@
 from django.shortcuts import render
-
+from .models import car
 # Create your views here.
 
 def index(request):
-    return render(request , 'index.html');
+    cars = car.objects.all()
+    return render(request, "index.html " , {'cars' : cars})
 
 def secondpage(request):
-    return render(request , 'secondpage.html')
+    return render(request , "secondpage.html")
