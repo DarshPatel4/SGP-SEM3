@@ -96,6 +96,7 @@ header{
  color: #ffff;
  
 } 
+
 .home
 {
  position:relative;
@@ -104,11 +105,12 @@ header{
  margin: auto;
  display:flex;
  align-items: center;
- background: url(/Assets/mycar-removebg-preview.png);
+ background-image: url("{% static 'img/mycar-removebg-preview.png' %}");
  background-size: 50%;
  background-repeat: no-repeat;
  background-position: center right;
 }
+
 .home-content
 {
  margin-top: 120px;

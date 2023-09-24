@@ -1,5 +1,5 @@
 {% load static  %}
-{% static "images" as baseUrl%}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +11,21 @@
   <link href="{% static 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' %}" rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' %} ">
   <link rel="stylesheet" type="text/css" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css' %}">
+  <style>
+    .home
+  {
+ position:relative;
+ width:100%;
+ height:100%;
+ margin: auto;
+ display:flex;
+ align-items: center;
+ background-image: url("{% static 'img/mycar-removebg-preview.png' %}");
+ background-size: 50%;
+ background-repeat: no-repeat;
+ background-position: center right;
+  }
+  </style>
 </head>
 <body>
   <section class="head" id="head">
@@ -98,8 +113,11 @@
  {% endcomment %}
 
    {% for car in cars %}
-            <div class="box">
-              <img src="{{car.img.url}}">
+            <div class="cars-container container">
+              <div class="box">
+                <img src="{{car.img.url}}">
+              <h2>View Car</h2>
+             </div>
             </div>
 		{% endfor %}
 
